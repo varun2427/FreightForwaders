@@ -1,0 +1,37 @@
+.spacer{
+    flex: 1 1 auto;
+}
+a{
+    padding: 20px;
+     font-size: 16px;
+     font-weight: 500;
+     color: white;
+}
+span{
+    font-size: 20px;
+    font-weight: 450;
+}
+i{
+    font-size: 40px;
+    padding-right: 8px;
+    padding-left: 30px;
+}
+.login{
+    padding: 0;
+    padding-right: 30px;
+}
+#login{
+    padding: 0;
+    font-size: 20px;
+}
+mat-toolbar{
+    height: 10%;
+    background-color: rgb(218, 176, 125);
+    
+    
+}
+.logo-icon {
+
+    background-image: url('/src/assets/images/logo.png');
+
+  }

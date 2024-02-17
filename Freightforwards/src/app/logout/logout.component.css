@@ -1,0 +1,19 @@
+.container1{ 
+    text-align: center; 
+    margin: 200px; 
+    border-radius: 100px; 
+    border-color: black; 
+     
+} 
+.logout{ 
+    display: flex; 
+    flex-direction: row; 
+    margin-left: 275px; 
+    
+} 
+.yes{ 
+    margin-left: 60px; 
+} 
+.button{ 
+    border-width: 30px; 
+}

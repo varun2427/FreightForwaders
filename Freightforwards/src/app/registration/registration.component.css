@@ -1,0 +1,24 @@
+.container {
+    max-width: 500px;
+    text-align: center;
+}
+
+.bgimage {
+    background-image: url(https://achyuthapackersandmovers.com/blog/wp-content/uploads/2020/11/pagetitle-bg-1-1200x453.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.form-group col-md-6 {
+    text-align: center;
+}
+
+.regi {
+    padding-left: 500px;
+}
+
+.content {
+    font-family: fantasy;
+    color: aliceblue;
+}

@@ -1,0 +1,39 @@
+
+
+<div class="box">
+    <div class="row">
+        <div class="col-5">
+            <br><br>
+            <div>
+                <h1
+                    style="text-align: center; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                    Shifting
+                </h1>
+                
+                <label>
+                    <input type="checkbox" value="selectAll" [(ngModel)]="selectAllChecked" (change)="handleSelectAllChange()">
+                   Select all
+                    <select class="form-control" name="houseShifting" id="houseShiftingSelect"
+                        (change)="handleOptionChange()" multiple [(ngModel)]="selectedOptions">
+                        <option value="selectAll">Select All</option>
+                        <option *ngFor="let option of options" [value]="option">{{ option }}</option>
+                    </select>
+                </label>
+                
+            </div>
+
+            <div>
+                <p>Selected items:</p>
+                <ul>
+                  <li *ngFor="let option of selectedOptions">{{ option }}</li>
+                </ul>
+                <p>Total Amount: {{ totalAmount }}</p>
+                
+              </div>
+
+            <button><a routerLink="/payment">Payment</a></button>
+           
+
+        </div>
+    </div>
+</div>

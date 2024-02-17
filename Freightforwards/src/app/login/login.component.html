@@ -1,0 +1,60 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+</head>
+
+<body class="fullimage">
+  <div class="container">
+    <div class="login">
+      <form #loginForm="ngForm" (ngSubmit)="submitLogin(loginForm.value)" novalidate>
+        <div class="form-group">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="login"
+              ngModel required minlength="2" maxlength="50" placeholder="Enter your Email-Id" #login="ngModel">
+          </div>
+          <div class="text-danger">
+            <div *ngIf="login.errors?.['required'] && login.touched">Login ID is mandatory</div>
+            <div *ngIf="login.errors?.['minlength'] && login.touched">Enter at least 2 characters</div>
+          </div>
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+
+        <div class="form-group">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+            <input [type]="passwordFieldType" class="form-control" id="exampleInputPassword1" name="password" ngModel
+              required #password="ngModel" minlength="8" maxlength="20" placeholder="Enter your Password">
+            <span class="input-group-addon show-password" (click)="togglePasswordVisibility()">
+              <i
+                [class]="passwordFieldType === 'password' ? 'glyphicon glyphicon-eye-open' : 'glyphicon glyphicon-eye-close'"></i>
+            </span>
+          </div>
+          <div class="text-danger" >
+            <div *ngIf="password.errors?.['required'] && password.touched">Password is mandatory</div>
+            <div *ngIf="password.errors?.['minlength'] && password.touched">Enter at least 8 characters</div>
+          </div>
+          <small id="passwordHelpInline" class="text-muted" style="color: black;">
+            Must be 8-20 characters long.
+          </small>
+          <div ><button class="button-89" role="button" style="color: rgb(0, 0, 0);">Login</button> </div>
+          
+        </div>
+
+        
+
+        <p class="horizontal-line-text">
+          <span style="color: black; align-items: center;">or</span>
+        </p>
+
+        <button class="btn btn-block google-sign-in" (click)="GoogleLogin()">
+          <img style="height: 13px; width: 13px;" src="https://www.outsystems.com/forge/DownloadResource.aspx?FileName=&ImageBinaryId=43951" alt="">
+          <span style="color: black;">Continue with Google</span>
+        </button>
+
+        
+      </form>
+    </div>
+  </div>
+</body>

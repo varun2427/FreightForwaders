@@ -1,0 +1,180 @@
+.card-img {
+    margin: 33px;
+    margin-left: 170px;
+    width: 1200px;
+}
+
+.about-img {
+    width: 400px;
+    float: right;
+}
+
+.clear-fix {
+    color: rgb(164, 148, 179);
+    padding-left: 20px;
+}
+
+
+
+@media (max-width: 600px) {
+    .TopMar {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 760px) {
+    .TopMar {
+        margin-top: 15px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .our_service_area {
+        padding: 75px 0px;
+    }
+}
+
+.our_service_area {
+    background-color: #017dc740;
+    padding: 40px 0px;
+}
+
+.sec_middle_title h2 {
+    justify-content: center;
+    padding-left: 410px;
+    font-weight: 450;
+    font-size: 40px;
+    color: rgb(73, 68, 68);
+    padding-bottom: 30px;
+    font-family: sans-serif;
+}
+
+.clearfix {
+    font-family: cursive;
+    text-align: center
+}
+
+.con {
+    color: rgba(0, 0, 0, 0.573);
+    background: #968ea7;
+    padding-left: 30px;
+}
+
+.col-md-4 {
+    padding-left: 50px;
+}
+
+body {
+    background: #3f2f3a;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px auto 100px;
+    color: white;
+}
+
+.main {
+    width: 100%;
+    min-height: 380px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.service {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0 0 20px -15px black;
+    z-index: 1;
+    transition: transform .7s;
+}
+
+.service-logo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 10px solid #000000;
+    margin: -90px auto 0;
+    background: white;
+
+
+}
+
+.service-logo img {
+    width: 50px;
+    margin-top: 30px;
+
+}
+
+.service h4 {
+    height: 35px;
+    width: 80%;
+    background: white;
+    margin: 50px auto;
+    position: relative;
+
+
+}
+
+.service h4::after {
+    content: '';
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right, white, #a29bb0);
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: -1;
+
+}
+
+.service h4::before {
+    content: '';
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right, white, #968ea7, white);
+    position: absolute;
+    left: -5px;
+    bottom: -5px;
+    z-index: -1;
+}
+
+.shadow1 {
+    height: 200px;
+    width: 80%;
+    background: white;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 10%;
+    z-index: -1;
+    box-shadow: 0 0 20px -15px black;
+    transition: transform .7s;
+
+}
+
+.shadow2 {
+    height: 200px;
+    width: 64%;
+    background: white;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 18%;
+    z-index: -2;
+
+}
+
+.main:hover .service {
+    transform: translate(-50px);
+
+}
+
+.main:hover .shadow1 {
+    transform: translate(-25px);
+}

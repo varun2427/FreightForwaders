@@ -1,0 +1,16 @@
+.services{ 
+    justify-content: center; 
+    padding-left: 47%; 
+    padding-top: 10px; 
+    font-size: 40px; 
+    font-weight: 450; 
+    color: purple; 
+} 
+.card img:hover{ 
+  transition: 0.3s ease-in-out; 
+  transform: scale(1.1); 
+}
+.card-text-container {
+    height: 200px; /* Adjust the height as needed */
+    overflow: auto; /* Add scrollbar if the content exceeds the height */
+  }

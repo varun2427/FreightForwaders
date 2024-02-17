@@ -1,0 +1,18 @@
+<mat-toolbar>
+<span>Household movers</span>
+  <div class="spacer"></div>
+  <a class="icons" routerLink="home">Home</a>
+  <a class="icons" routerLink="about">About Us</a>
+  <a class="icons" routerLink="services">Services</a>
+  <a class="icons" routerLink="faq">FAQs</a>
+  <a class="icons" routerLink="contact">Contact Us</a>
+  <div class="spacer"></div>
+  <!-- <button routerLink = "cart" routerLinkActive = "active" class="btn"> 
+    <i style = "font-size: 30px;" class = "ri-shopping-cart-2-line"></i> 
+     <div style="font-size: 11px;" class="badge bg-danger"></div> 
+  </button> -->
+  <a *ngIf="!loggedIn()" routerLink="register">Register</a>
+  <i *ngIf="!loggedIn()" class="ri-user-fill" id="login"></i>
+  <a *ngIf="!loggedIn()" class="login" routerLink="login" routerLinkActive="active">Log In</a>
+  <a *ngIf="loggedIn()" style="cursor: pointer;" (click)="signout()">LogOut</a>
+</mat-toolbar>
